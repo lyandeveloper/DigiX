@@ -1,0 +1,59 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+header .logo {
+    font-size: 2rem;
+}
+
+header .logo span {
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+nav ul li {
+    margin-right: 2rem;
+}
+
+.active {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+section.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content p {
+    margin-top: 2rem;
+    color: var(--black-888);
+}
+
+.hero-content button {
+    margin-top: 2rem;
+}
+
+.hero-content h1, span { 
+    font-size: 2.5rem;
+}
+
+.hero-content h1 span {
+    color: var(--main-color);
+}

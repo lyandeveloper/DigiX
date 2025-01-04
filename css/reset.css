@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: "Inter", serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-222);
+}
+
+button {
+    border: 0;
+    background-color: var(--main-color);
+    color: var(--white);
+    cursor: pointer;
+    padding: 0.7rem 1.8rem;
+    border-radius: 4px;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+@media (max-width: 720px) {
+    html {
+      font-size: 87.5%;
+    }
+}
