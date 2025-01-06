@@ -58,6 +58,19 @@ section.hero {
     color: var(--main-color);
 }
 
+.clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gray-800);
+    padding: 0 1rem;
+    border-radius: 4px;
+}
+
+.clients img {
+    width: 9%;
+}
+
 @media (max-width: 1440px) {
     .hero-content span {
         font-size: 2rem;
