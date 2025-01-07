@@ -4,10 +4,15 @@
     box-sizing: border-box;
     font-size: 1rem;
     font-family: "Inter", serif;
+    color: var(--black-222);
 }
 
 h1 {
     font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 a {

@@ -1,7 +1,10 @@
 :root {
     --main-color: #ff6f20;
-    --black-222: #222;
+    --black-222: #212529;
+    --black-555: #868e96;
     --black-888: #888;
+    --gray-500: #ccc;
     --gray-800: #eee;
     --white: #fff;
+    --swiper-pagination-color: var(--main-color)
 }

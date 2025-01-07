@@ -1,48 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/colors.css">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/colors.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>DigiX</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="container">
-        <header>
-            <a href="#" class="logo">Digi<span>X</span></a>
-            <nav>
-                <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </nav>
-            <button>Contact us</button>
-        </header>
+      <header>
+        <a href="#" class="logo">Digi<span>X</span></a>
+        <nav>
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <button>Contact us</button>
+      </header>
 
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Drive Results with Export <span>Marketing</span> Strategies</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, aperiam dolor, quis aspernatur temporibus voluptatibus doloribus reiciendis hic quas sed sint rem ad maxime neque iusto odit repellendus, deleniti unde.</p>
-                <button>Contact us</button>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Drive Results with Export <span>Marketing</span> Strategies</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim,
+            aperiam dolor, quis aspernatur temporibus voluptatibus doloribus
+            reiciendis hic quas sed sint rem ad maxime neque iusto odit
+            repellendus, deleniti unde.
+          </p>
+          <button>Contact us</button>
+        </div>
+        <img src="/assets/business-man.png" alt="business-man.png" />
+      </section>
+
+      <section class="clients">
+        <img src="/assets/meta-logo.png" alt="meta-logo.png" />
+        <img src="/assets/philips-logo.png" alt="philips-logo.png" />
+        <img src="/assets/linkedin-logo.png" alt="linkedin-logo.png" />
+        <img src="/assets/google-logo.png" alt="google-logo.png" />
+        <img src="/assets/canon-logo.png" alt="canon-logo.png" />
+        <img src="/assets/slack-logo.png" alt="slack-logo.png" />
+      </section>
+
+      <section class="services">
+        <div class="service-title">
+          <h2>Our Digital Marketing Expertise</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            totam, sed labore magnam aliquid cupiditate est cumque error quod ex
+            modi possimus officiis illum, alias eos eveniet aut laudantium
+            voluptatibus?
+          </p>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="swiper-card">
+                <img src="/assets/icons/app-development.png" alt="app-development.png">
+                <span>Website Development</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque quasi</p>
+              </div>
             </div>
-            <img src="/assets/business-man.png" alt="business-man.png">
-        </section>
+            
+            <div class="swiper-slide">
+              <div class="swiper-card">
+                <img src="/assets/icons/content-writing.png" alt="content-writing.png">
+                <span>Content Writing</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque quasi</p>
+              </div>
+            </div>
 
-        <section class="clients">
-            <img src="/assets/meta-logo.png" alt="meta-logo.png">
-            <img src="/assets/philips-logo.png" alt="philips-logo.png">
-            <img src="/assets/linkedin-logo.png" alt="linkedin-logo.png">
-            <img src="/assets/google-logo.png" alt="google-logo.png">
-            <img src="/assets/canon-logo.png" alt="canon-logo.png">
-            <img src="/assets/slack-logo.png" alt="slack-logo.png">
-        </section>
+            <div class="swiper-slide">
+              <div class="swiper-card">
+                <img src="/assets/icons/social-media.png" alt="social-media.png">
+                <span>Social Media</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque quasi</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-card">
+                <img src="/assets/icons/seo.png" alt="seo.png">
+                <span>SEO</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque quasi</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-card">
+                <img src="/assets/icons/video-editing-app.png" alt="video-editing-app.png">
+                <span>Video Editing</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque quasi</p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
     </main>
-</body>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        slidesPerView: 4,
+        initialSlide: 1,
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+
+        breakpoints: {
+          1920: {
+            slidesPerView: 4, 
+          },
+
+          1440: {
+            slidesPerView: 3, 
+          },
+
+          768: {
+            slidesPerView: 3
+          }
+        }
+      });
+    </script>
+  </body>
 </html>
