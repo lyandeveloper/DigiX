@@ -174,7 +174,7 @@ section.hero {
 }
 
 .testimonial {
-    min-height: 80vh
+    min-height: 90vh
 }
 
 .testimonial h2 {
@@ -230,6 +230,62 @@ section.hero {
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.blog {
+    min-height: 90vh;
+}
+
+.blog h2 {
+    text-align: center;
+}
+
+.blog .blog-posts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.blog .blog-posts .post {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: var(--shadow-elevation-medium);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.post img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.post .tag {
+    background-color: #fae5d9;
+    border-radius: 20px;
+    width: 80px;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.1rem;
+}
+
+.post .tag small {
+    color: #ff6f20;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.blog-posts .post strong {
+    margin-top: 1rem;
+}
+
+.blog-posts .post a {
+    margin-top: 1rem;
+    color: #ff6f20;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
 @media (max-width: 1440px) {
