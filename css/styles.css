@@ -2,7 +2,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 1rem 0 !important;
 }
 
 header .logo {
@@ -118,6 +118,118 @@ section.hero {
 
 .swiper-pagination {
     margin-top: 5rem !important;
+}
+
+.about-us {
+    display: flex;
+    min-height: 70vh;
+}
+
+.about-us img {
+    width: 50%;
+    height: 50%;
+    border-radius: 4px;
+}
+
+.about-us .about-content {
+    padding: 0 0 2rem 8rem;
+}
+
+.about-us .about-content p {
+    color: var(--black-555);
+    margin-top: 1rem;
+}
+
+.about-us .about-content button {
+    margin-top: 4rem;
+}
+
+.metrics {
+    width: 100%;
+    min-height:40vh;
+}
+
+.metrics-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.metric span, .metric p {
+    color: var(--white) !important;
+}
+
+.metric span {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.testimonial {
+    min-height: 80vh
+}
+
+.testimonial h2 {
+    text-align: center;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.testimonial-card {
+    width: 400px;
+    padding: 2rem 1rem;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: var(--shadow-elevation-medium);
+} 
+
+.testimonial-card .testimonial-profile {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-profile .testimonial-title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+.testimonial-profile .testimonial-title span {
+    color: var(--black-555);
+}
+
+.testimonial-stars {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.testimonial-stars img {
+    width: 25px !important;
+    height: 25px !important;
+} 
+
+.testimonial-card p {
+    margin-top: 1rem;
+}
+
+.testimonial-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 @media (max-width: 1440px) {
