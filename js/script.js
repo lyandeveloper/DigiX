@@ -21,7 +21,8 @@ const swiper = new Swiper(".swiper", {
       },
 
       768: {
-        slidesPerView: 3
+        slidesPerView: 3,
+        spaceBetween: 200
       }
     }
 }); 

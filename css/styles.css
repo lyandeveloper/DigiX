@@ -75,8 +75,8 @@ section.hero {
     margin-top: 5rem;
 }
 
-.service-title p {
-    width: 900px;
+.service-title p { 
+    padding: 0 5rem;
     margin-top: 1rem;
     color: var(--black-555);
 }
@@ -242,9 +242,12 @@ section.hero {
 
 .blog .blog-posts {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
     justify-content: space-between;
     margin-top: 10rem;
+    margin-bottom: 20px;
 }
 
 .blog .blog-posts .post {
@@ -335,6 +338,72 @@ footer .logo span {
 
 .footer-section strong, .footer-section span, .footer-section a {
     color: var(--white) !important;
+}
+
+@media (max-width: 768px) { 
+    header {
+        justify-content: center;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        min-height: auto !important;
+    }
+    
+    .hero-content {
+        width: 100%;
+        text-align: center;
+        margin: 2rem 2rem;
+    }
+
+    .hero img {
+        width: 500px !important;
+        margin-top: 2rem;
+    }
+
+    .about-us {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        min-height: 90vh;
+    }
+
+    .about-us img {
+        width: 500px;
+        margin-bottom: 2rem;
+        height: auto;
+    }
+
+    .about-us .about-content { 
+        padding: 0;
+    } 
+
+    .metric span {
+        font-size: 3rem;
+    }
+
+    .testimonial-wrapper {
+        gap: 20px;
+    }
+
+    .blog .blog-posts {
+        justify-content: center;
+    }
+
+    .clients img {
+        width: 11%;
+    } 
 }
 
 @media (max-width: 1440px) {
