@@ -406,6 +406,24 @@ footer .logo span {
     } 
 }
 
+@media (max-height: 1000px) { 
+    .swiper {
+        margin-bottom: 10rem;
+    }
+
+    .testimonial {
+        min-height: 100vh;
+    }
+
+    .testimonial-wrapper {
+        margin-top: 5rem;
+    }
+
+    .blog {
+        margin-bottom: 10rem;
+    }
+}
+
 @media (max-width: 1440px) {
     .hero-content span {
         font-size: 2rem;
@@ -413,5 +431,9 @@ footer .logo span {
 
     section.hero img {
         width: 600px;
+    }
+
+    .testimonial-wrapper {
+        gap: 20px;
     }
 }
