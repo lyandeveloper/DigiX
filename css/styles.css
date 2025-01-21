@@ -174,7 +174,14 @@ section.hero {
 }
 
 .testimonial {
-    min-height: 90vh
+    min-height: 80vh
+}
+
+.testimonial > p {
+    text-align: center;
+    color: var(--black-555);
+    margin-top: 1rem;
+    padding: 0 5rem;
 }
 
 .testimonial h2 {
@@ -234,6 +241,13 @@ section.hero {
 
 .blog {
     min-height: 90vh;
+}
+
+.blog p {
+    text-align: center;
+    color: var(--black-555);
+    margin-top: 1rem;
+    padding: 0 5rem;
 }
 
 .blog h2 {
@@ -406,13 +420,52 @@ footer .logo span {
     } 
 }
 
+@media (max-width: 425px) { 
+
+    .about-us {
+        min-height: 80vh;
+    }
+
+    .metrics {
+        min-height: 60vh;
+    }
+
+    .metrics-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .metric {
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+ 
+    .blog {
+        margin-top: 5rem;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+    } 
+
+    .footer-section {
+        margin-top: 1rem;
+    }
+
+    .clients img {
+        width: 15%;
+    }
+}
+
 @media (max-height: 1000px) { 
     .swiper {
         margin-bottom: 10rem;
-    }
-
-    .testimonial {
-        min-height: 100vh;
     }
 
     .testimonial-wrapper {
@@ -435,5 +488,9 @@ footer .logo span {
 
     .testimonial-wrapper {
         gap: 20px;
+    }
+
+    .testimonial {
+        min-height: 100vh;
     }
 }
