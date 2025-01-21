@@ -38,3 +38,23 @@ const swiper = new Swiper(".swiper", {
       }
     }
 }); 
+
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header .header-wrapper nav ul li a')
+
+window.onscroll = () => {
+  sections.forEach(section => {
+    let top = window.scrollY;
+    let offset = section.offsetTop;
+    let height = section.offsetHeight - 100;
+    let id = section.getAttribute('id');
+    
+    if(top >= offset && top < offset + height) {
+      navLinks.forEach(links => {
+        links.classList.remove('active');
+        document.querySelector(`header .header-wrapper nav ul li a[href*=${id}]`).classList.add('active');
+      })
+    }
+    
+  })
+}
