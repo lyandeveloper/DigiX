@@ -7,6 +7,10 @@
     color: var(--black-222);
 }
 
+html {
+    scroll-behavior:smooth
+}
+
 h1 {
     font-size: 2.5rem;
 }
