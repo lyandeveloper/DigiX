@@ -450,7 +450,7 @@ footer .logo span {
         display: block;
     }
 
-    header button {
+    header .contact {
         display: none;
     }
 
