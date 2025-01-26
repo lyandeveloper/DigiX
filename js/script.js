@@ -1,3 +1,5 @@
+let open = false;
+
 const swiper = new Swiper(".swiper", {
     autoplay: {
       delay: 5000,
@@ -124,10 +126,37 @@ function trigeredActionWhenSectionIsVisible() {
   const target = document.getElementById('metrics');
   observer.observe(target);
 }
+
+function displayMenuMobile() {
+  let menu = document.querySelector('.menu-mobile-content');
+
+  if(!open) {
+    menu.style.display = "flex";
+    open = true;
+  } else {
+    menu.style.display = "none";
+    open = false;
+  }
+}
+
+function hideMenuWhenClickInLink() {
+  let menu = document.querySelector('.menu-mobile-content');
+  let menuLinks = document.querySelectorAll('.menu-mobile-content ul li a');
+
+  menuLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      if(open) {
+        menu.style.display = "none";
+        open = false;
+      };
+    })
+  });
+}
  
 
 
 function main() {
+  hideMenuWhenClickInLink();
   trigeredActionWhenSectionIsVisible();
   activeLinkOnScroll();
 }

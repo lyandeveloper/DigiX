@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="/css/colors.css" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/styles.css" />
@@ -24,13 +25,28 @@
       <header>
         <div class="header-wrapper container">
           <a href="#" class="logo">Digi<span>X</span></a>
-          <nav>
+          <nav class="menu-desktop">
             <ul>
               <li><a class="active" href="#home">Home</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#blog">Blog</a></li>
             </ul>
+          </nav>
+          <nav class="menu-mobile">
+            <button onclick="displayMenuMobile()" class="material-symbols-outlined mobile-button">
+              menu
+            </button>
+
+            <div class="menu-mobile-content">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
           </nav>
           <button>Contact us</button>
         </div>
@@ -247,7 +263,7 @@
           </div>
         </div>
       </section>
-      <footer>
+      <footer id="contact">
         <div class="footer-wrapper container">
           <a href="" class="logo">
             Digi<span>X</span>
