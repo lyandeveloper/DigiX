@@ -35,8 +35,12 @@ const swiper = new Swiper(".swiper", {
       },
 
       375: {
-        slidesPerView: 1,
-        centeredSlides: true
+        slidesPerView: 2,
+        spaceBetween: 250
+      },
+
+      320: {
+        slidesPerView: 1
       }
     }
 }); 

@@ -548,6 +548,10 @@ footer .logo span {
     .clients img {
         width: 15%;
     }
+
+    .title p {
+        width: 100%;
+    }
 }
 
 @media (max-height: 1000px) { 
